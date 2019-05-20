@@ -1,23 +1,22 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div>
+   <router-view/>
+    <FootGuide/>
   </div>
 </template>
 
 <script>
+  import FootGuide from 'components/FootGuide/FootGuide.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    FootGuide
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="stylus" rel="stylesheet/stylus" >
+  #app
+    width 100%
+    height 100%
 </style>

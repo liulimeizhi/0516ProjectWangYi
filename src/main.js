@@ -1,15 +1,20 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+/*
+* 入口js
+* */
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
+import './mock/mockServer'
+import 'lib-flexible/flexible'
 
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  router,//配置路由器
+  store  //配置vuex全局都可以使用$router
 })
+
