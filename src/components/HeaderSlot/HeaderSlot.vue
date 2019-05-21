@@ -29,7 +29,7 @@
 
 <style lang="stylus" rel="stylesheet/stylus" >
   @import "../../../static/css/reset.css"
-  .slotContainer
+ /* .slotContainer
     .headerSlot
-    .rowNav
+    .rowNav*/
 </style>
