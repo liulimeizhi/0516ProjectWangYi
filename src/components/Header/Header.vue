@@ -37,8 +37,8 @@
 
 <script type="text/ecmascript-6">
 
-  import {mapState} from 'vuex'
-  import BScroll from 'better-scroll'
+  import {mapState} from 'vuex';
+  import BScroll from 'better-scroll';
   export default {
     data(){
        return{
@@ -47,6 +47,14 @@
          scrollX:0 //x轴滚动
        }
     },
+   /* mounted() {
+      this.$nextTick(() => {
+        new Bscroll('.headerNav', {
+          click: true,
+          scrollX: true
+        });
+      })
+    },*/
     methods:{
       change(index){
         this.itemIndex=index
@@ -60,30 +68,20 @@
         navList:state=>state.home.navList
       }),
       newListNav:{
-        get(){
+        get:function () {
            return this.navList
         },
-        set(){
-          let newArr=this.navList.filter((nav,index)=>{((index+1) % 4 !==0);
+        set:function () {
+          let newArr=this.navList.filter((nav,index)=>(index + 1) % 4 !==0);
            this.itemIndex = newArr.length
-            console.log('newarrl111111111')
-          })
+             return newArr;
+          }
         }
       }
-    },
-     /* mounted() {
-        this.$nextTick(() => {
-           new Bscroll('.headerNav', {
-             click: true,
-             scrollX: true
-           });
-        })
-    }
-*/
   }
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus" scoped>
+<style lang="stylus" rel="stylesheet/stylus" >
   @import "../../common/stylus/mixins.styl"
   .headerContainer
     position fixed

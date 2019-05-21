@@ -11,3 +11,10 @@ export const reqHomeData = () => ajax('/home');
 
 // 搜索 关键字
 export const reqInitSearch = () => ajax(`${prefix}/xhr/search/init.json`, 'POST');
+
+// 获取分类列表
+export const reqCategoryList = () => ajax('/categorylist');
+
+//获取识物的数据列表
+export const reqRecommendTabs = () => ajax(`${prefix}/topic/v1/find/getTabs.json`);
+

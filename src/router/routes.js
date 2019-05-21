@@ -9,6 +9,10 @@ import General from 'pages/General/General.vue'
 import ShopCart from 'pages/ShopCart/ShopCart.vue'
 import Profile from 'pages/Profile/Profile.vue'
 import Search from 'pages/Search/Search.vue'
+import Category  from'pages/Classify/Category/Category.vue'
+import GeneralList  from'pages/General/GeneralList/GeneralList.vue'
+
+
 
 
 export default [
@@ -16,18 +20,53 @@ export default [
   {
     path: '/',
     redirect: '/home',
+    meta: {
+      isShow: true
+    }
   },
   {
     path: '/home',
     component: Home,
+    meta: {
+      isShow: true
+    }
   },
   {
     path: '/classify',
     component: Classify,
+    meta: {
+      isShow: true
+    },
+    children:[
+      {
+        path: '/classify/category',
+        component: Category,
+        meta: {
+          isShow: true
+        }
+      },
+      {
+        path: '',
+        redirect: '/classify/category',
+      }
+    ]
   },
   {
     path: '/general',
     component: General,
+    children:[
+      {
+        path: '/general/generallist',
+        component: GeneralList,
+        meta: {
+          isShow: true
+        }
+      },
+      {
+        path: '',
+        redirect: '/general/generallist',
+      }
+    ]
   },
   {
     path: '/shopcart',

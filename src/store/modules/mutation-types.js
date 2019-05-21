@@ -6,3 +6,5 @@ export const RECEIVE_INITSEARCH = 'receive_initsearch';
 export const RECEIVE_POPULARITEM = 'receive_popularitem';
 export const RECEIVE_FLASHSALE = 'receive_flashsale';
 export const RECEIVE_NEWITEMLIST = 'receive_newitemlist';
+export const RECEIVE_CATEGORYLIST = 'receive_categorylist';
+export const RECEIVE_RECOMMENDTABS = 'receive_recommendtabs';

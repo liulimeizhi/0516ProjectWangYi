@@ -111,7 +111,7 @@
             line-height 35px
             margin-top 10px
             span
-              apostrophe()
+
             .good-price
               color $red
           .goodAdvantage

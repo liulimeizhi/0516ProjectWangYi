@@ -71,10 +71,12 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+  @import "../../common/stylus/mixins.styl";
   .homeContainer
     padding-bottom 100px
     .homeContent
       .wangyiGrow
+        clearFix()
         display flex
         justify-content space-around
         align-items center
