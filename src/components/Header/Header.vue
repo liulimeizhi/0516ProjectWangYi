@@ -11,7 +11,8 @@
     <div class="headerNav" v-if="isShow" ref="wrapper">
       <ul class="headerNavLeft">
         <li ><a href="javascript:;">推荐</a></li>
-        <li @click="change(index)" :class="{active: index === itemIndex}"  v-for="(item, index) in navList" :key="index">
+        <li @click="change(index)"
+          :class="{active: index === itemIndex}"  v-for="(item, index) in navList" :key="index">
           <a>{{item.text}}</a>
         </li>
       </ul>
@@ -38,7 +39,7 @@
 <script type="text/ecmascript-6">
 
   import {mapState} from 'vuex';
-  import BScroll from 'better-scroll';
+  import Bscroll from 'better-scroll';
   export default {
     data(){
        return{
@@ -47,14 +48,14 @@
          scrollX:0 //x轴滚动
        }
     },
-   /* mounted() {
+    mounted() {
       this.$nextTick(() => {
         new Bscroll('.headerNav', {
-          click: true,
-          scrollX: true
-        });
+          click:true,
+          scrollX:true
+        })
       })
-    },*/
+    },
     methods:{
       change(index){
         this.itemIndex=index
@@ -84,7 +85,7 @@
 <style lang="stylus" rel="stylesheet/stylus" >
   @import "../../common/stylus/mixins.styl"
   .headerContainer
-    position fixed
+    position relative
     height 150px
     width 100%
     background-color #fff

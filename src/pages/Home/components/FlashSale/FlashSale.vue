@@ -71,12 +71,12 @@
       padding 0 10px 0 30px
       li
         float left
-        width 216px
+        width 214px
         height 270px
         margin-right 20px
         padding-bottom 30px
         img
-          width 216px
+          width 214px
           height 216px
           background-color #f5f5f5
         .goodPrice

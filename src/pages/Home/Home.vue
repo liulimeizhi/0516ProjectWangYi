@@ -38,7 +38,6 @@
 
 <script type="text/ecmascript-6">
 
-  import Header from '../../components/Header/Header.vue'
   import Swiper from './components/Swiper/Swiper.vue'
   import Nav from './components/Nav/Nav.vue'
   import Gift from './components/Gift/Gift.vue'
@@ -52,7 +51,6 @@
 
   export default {
     components:{
-      Header,
       Swiper,
       Nav,
       Gift,
@@ -62,7 +60,6 @@
       Recommend,
       FlashSale,
       NewProducts
-
     },
     mounted(){
       this.$store.dispatch('getHomeData')
@@ -73,6 +70,8 @@
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../../common/stylus/mixins.styl";
   .homeContainer
+    height 100%
+    overflow-x hidden
     padding-bottom 100px
     .homeContent
       .wangyiGrow

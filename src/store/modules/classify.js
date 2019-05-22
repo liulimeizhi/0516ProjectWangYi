@@ -7,7 +7,8 @@ import {
 }from'./mutation-types';
 
 const state={
-   categoryList:[] //获取分类列表
+   categoryList:[],//获取分类列表
+  currentIndex: 0  // 当前选中的下标
 };
 
 const mutations={

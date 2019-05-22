@@ -108,16 +108,16 @@
         clearFix()
         li
           float left
-          width 165px
+          width 163px
           height 180px
           margin 0 10px 10px 0
           background-color #F5F5F5
           text-align center
           padding-top 10px
-          box-sizing border-box
+
           img
-            width 120px
-            height 120px
+            width 100px
+            height 100px
             margin-left 50%
             transform translateX(-60px)
 </style>

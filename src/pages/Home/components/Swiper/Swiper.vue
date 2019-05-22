@@ -47,7 +47,6 @@
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../../../../common/stylus/mixins.styl";
   .page
-    padding-top 150px
     .page-container
       width 750px
       height 400px

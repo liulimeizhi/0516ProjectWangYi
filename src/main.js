@@ -8,7 +8,20 @@ import store from './store'
 import './mock/mockServer'
 import 'lib-flexible/flexible'
 
+import Footer from './components/FootGuide/FootGuide.vue';
+import Header from './components/Header/Header.vue';
+import Split from './components/Split/Split.vue';
+import HeaderSlot from './components/HeaderSlot/HeaderSlot.vue';
+
+
 Vue.config.productionTip = false
+//注册全局组件
+
+Vue.component('Footer', Footer);
+Vue.component('Header', Header);
+Vue.component('Split', Split);
+Vue.component('HeaderSlot', HeaderSlot);
+
 
 new Vue({
   el: '#app',

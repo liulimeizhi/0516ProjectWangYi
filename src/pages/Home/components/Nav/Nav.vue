@@ -31,12 +31,12 @@
       text-align center
       .navItem
         float left
-        width 110px
+        width 100px
         height 156px
         margin 10px 20px 9px
         img
-          width 110px
-          height 110px
+          width 100px
+          height 100px
           margin-bottom 10px
         span
           font-size 24px

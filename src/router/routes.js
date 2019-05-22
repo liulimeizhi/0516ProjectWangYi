@@ -10,7 +10,6 @@ import ShopCart from 'pages/ShopCart/ShopCart.vue'
 import Profile from 'pages/Profile/Profile.vue'
 import Search from 'pages/Search/Search.vue'
 import Category  from'pages/Classify/Category/Category.vue'
-import GeneralList  from'pages/General/GeneralList/GeneralList.vue'
 
 
 
@@ -54,19 +53,6 @@ export default [
   {
     path: '/general',
     component: General,
-    children:[
-      {
-        path: '/general/generallist',
-        component: GeneralList,
-        meta: {
-          isShow: true
-        }
-      },
-      {
-        path: '',
-        redirect: '/general/generallist',
-      }
-    ]
   },
   {
     path: '/shopcart',
@@ -75,9 +61,13 @@ export default [
   {
     path: '/profile',
     component: Profile,
+    meta: {
+      isShow: false
+    }
   },
   {
     path: '/search',
     component: Search,
+
   }
 ]
